@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pynecone-catviewer"
+version = "0.1.0"
+description = ""
+authors = ["Giheon <74302278+Dockerel@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "pynecone_catviewer"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pynecone = "^0.0.70"
+pynecone-io = "^0.1.13"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1a1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
